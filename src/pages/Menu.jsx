@@ -145,7 +145,7 @@ function Menu() {
 
   return (
     <MenuContainer>
-      <Title>Our Exquisite Menu</Title>
+      <Title>Our Exquisite Items</Title>
       <MenuGrid>
         {menuItems.map((item) => (
           <Card key={item.id}>
