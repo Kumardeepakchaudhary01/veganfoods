@@ -44,7 +44,7 @@ function Footer() {
         <SocialLink href="https://instagram.com" target="_blank"><FaInstagram /></SocialLink>
         <SocialLink href="https://twitter.com" target="_blank"><FaTwitter /></SocialLink>
       </SocialIcons>
-      <FooterText>© 2025 Luxury Bites. All rights reserved.</FooterText>
+      <FooterText>© 2025 Nutri Cascades. All rights reserved.</FooterText>
     </FooterContainer>
   );
 }

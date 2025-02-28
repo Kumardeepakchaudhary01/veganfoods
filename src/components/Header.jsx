@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ShoppingCart, Search } from "@mui/icons-material";
 import styled from "styled-components";
+import logo from "../assets/logo.png";
 
 // Styled Navbar
 const Navbar = styled.nav`
@@ -15,16 +16,22 @@ const Navbar = styled.nav`
   position: sticky;
   top: 0;
   z-index: 1000;
+  height: 70px; /* Ensure consistent header height */
 `;
 
 // Logo Styling
-const Logo = styled.h2`
-  font-size: 30px;
-  font-weight: bold;
-  color: #ffd700; /* Gold color for luxury */
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  cursor: pointer;
+const Logo = styled.div`
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  img {
+    height: 60px; /* Adjust logo size to fit within the header */
+    background-color:white;
+    border-radius:50%;
+    object-fit: contain;
+    cursor:pointer;
+  }
 `;
 
 // Navigation Wrapper
@@ -99,7 +106,9 @@ const CartIcon = styled(ShoppingCart)`
 function Header() {
   return (
     <Navbar>
-      <Logo><img src="./assets/logo.png" alt="VEGAN" /></Logo>
+      <Logo>
+        <img src={`${logo}`} alt="VEGAN" />
+      </Logo>
 
       {/* Search Bar */}
       <SearchBox>

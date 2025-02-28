@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import bg from "../assets/bg.png";
 
 // Styled Components
@@ -45,7 +46,7 @@ const Subtitle = styled(motion.p)`
   line-height: 1.6;
 `;
 
-const Button = styled(motion.a)`
+const Button = styled(motion.button)`
   margin-top: 30px;
   padding: 16px 40px;
   font-size: 22px;
@@ -57,9 +58,11 @@ const Button = styled(motion.a)`
   transition: 0.3s;
   box-shadow: 0px 6px 18px rgba(229, 193, 0, 0.4);
   font-family: "Cormorant Garamond", serif;
+  border: none;
+  cursor: pointer;
 
   &:hover {
-    background: linear-gradient(135deg,rgb(247, 247, 247), #e5c100);
+    background: linear-gradient(135deg, rgb(247, 247, 247), #e5c100);
     transform: scale(1.1);
     box-shadow: 0px 12px 30px rgba(229, 193, 0, 0.6);
   }
@@ -101,6 +104,7 @@ function Home() {
         >
           Experience unparalleled luxury and world-class dining in an ambiance of sophistication.
         </Subtitle>
+<<<<<<< HEAD
         <Button
           href="https://veganfoods.vercel.app/menu"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -109,6 +113,17 @@ function Home() {
         >
           Explore Our Menu
         </Button>
+=======
+        <Link to="/menu">
+          <Button
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 2 }}
+          >
+            Explore Our Menu
+          </Button>
+        </Link>
+>>>>>>> 96dbde2 (updated logo)
       </Overlay>
     </HomeContainer>
   );
