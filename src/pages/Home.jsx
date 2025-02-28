@@ -104,16 +104,6 @@ function Home() {
         >
           Experience unparalleled luxury and world-class dining in an ambiance of sophistication.
         </Subtitle>
-<<<<<<< HEAD
-        <Button
-          href="https://veganfoods.vercel.app/menu"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 2 }}
-        >
-          Explore Our Menu
-        </Button>
-=======
         <Link to="/menu">
           <Button
             initial={{ opacity: 0, scale: 0.8 }}
@@ -123,7 +113,6 @@ function Home() {
             Explore Our Menu
           </Button>
         </Link>
->>>>>>> 96dbde2 (updated logo)
       </Overlay>
     </HomeContainer>
   );
